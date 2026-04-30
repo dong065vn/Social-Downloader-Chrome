@@ -1,0 +1,127 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.3c1ed2d2.png",
+         "16": "icon16.plasmo.6c567d50.png",
+         "32": "icon32.plasmo.76b92899.png",
+         "48": "icon48.plasmo.aced7582.png",
+         "64": "icon64.plasmo.8bb5e6e0.png"
+      }
+   },
+   "author": "minhchi1509",
+   "background": {
+      "service_worker": "static/background/index.js"
+   },
+   "content_scripts": [ {
+      "css": [  ],
+      "js": [ "Bilibili.9d6f30df.js" ],
+      "matches": [ "https://www.bilibili.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [  ],
+      "js": [ "Douyin.fb5aaa48.js" ],
+      "matches": [ "https://www.douyin.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [  ],
+      "js": [ "Facebook.385b96ea.js" ],
+      "matches": [ "https://www.facebook.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "css": [  ],
+      "js": [ "FbStoryCustomReaction.4e9defa0.js" ],
+      "matches": [ "https://www.facebook.com/*" ]
+   }, {
+      "css": [  ],
+      "js": [ "Instagram.f1e86f7f.js" ],
+      "matches": [ "https://www.instagram.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [  ],
+      "js": [ "Kuaishou.4f547caf.js" ],
+      "matches": [ "https://www.kuaishou.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [  ],
+      "js": [ "Threads.f9de1e2f.js" ],
+      "matches": [ "https://www.threads.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [  ],
+      "js": [ "Tiktok.e79cfa76.js" ],
+      "matches": [ "https://www.tiktok.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [  ],
+      "js": [ "Weibo.b0992fa8.js" ],
+      "matches": [ "https://weibo.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [  ],
+      "js": [ "Xiaohongshu.bf32aafa.js" ],
+      "matches": [ "https://www.xiaohongshu.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [  ],
+      "js": [ "X.4a72bbd4.js" ],
+      "matches": [ "https://x.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Download images and videos from social media platforms",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icon128.plasmo.3c1ed2d2.png",
+      "16": "icon16.plasmo.6c567d50.png",
+      "32": "icon32.plasmo.76b92899.png",
+      "48": "icon48.plasmo.aced7582.png",
+      "64": "icon64.plasmo.8bb5e6e0.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtzsd7N4rBka7LJSRdb8yWfhWrFzo4ZtvDRxxVjo3azyJXmwti77oZjc6rtJiex6bFbyhuPJy96poj4hTEwXRTM3jd2kDsbFz3eiEZxj3EpDEZT40jUlkBOOiiX0YACsjspUfD+s7CC24+nkU2IZaD1+cHviuQfkXMCCmq1nj9Bu//B01xkbcNoW5boDDUsnenYJnkrAs5E64/8MzT+bjnLdwzYB+6O92do7qTxFaCrbZpNowugHGVhl37xpi1/x6/xKehl5xjxZ3s0vogmSUmExfDSpebA2W6Hzdjqh52wR0tXbsPEfeFR/bR7OaR5/IlbpN2L4/zFH+3sqY03P6AQIDAQAB",
+   "manifest_version": 3,
+   "name": "Social Bulk Downloader",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "cookies", "downloads", "webRequest", "declarativeNetRequest", "activeTab", "storage", "alarms", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.7.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://www.tiktok.com/*", "https://www.douyin.com/*", "https://www.xiaohongshu.com/*" ],
+      "resources": [ "scripts/webpage-event-listener.js" ]
+   }, {
+      "matches": [ "https://www.bilibili.com/*" ],
+      "resources": [ "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://www.douyin.com/*" ],
+      "resources": [ "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://www.facebook.com/*" ],
+      "resources": [ "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://www.facebook.com/*" ],
+      "resources": [ "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://www.instagram.com/*" ],
+      "resources": [ "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://www.kuaishou.com/*" ],
+      "resources": [ "Kuaishou.7fc63f54.css", "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://www.threads.com/*" ],
+      "resources": [ "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://www.tiktok.com/*" ],
+      "resources": [ "Tiktok.83df2cf5.css", "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://weibo.com/*" ],
+      "resources": [ "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://www.xiaohongshu.com/*" ],
+      "resources": [ "Xiaohongshu.cf0ff033.css", "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   }, {
+      "matches": [ "https://x.com/*" ],
+      "resources": [ "X.ca8338e7.css", "Bilibili.db083b05.css", "Bilibili.79e7015e.css" ]
+   } ]
+}
