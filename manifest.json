@@ -77,7 +77,6 @@
       "48": "icon48.plasmo.aced7582.png",
       "64": "icon64.plasmo.8bb5e6e0.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtzsd7N4rBka7LJSRdb8yWfhWrFzo4ZtvDRxxVjo3azyJXmwti77oZjc6rtJiex6bFbyhuPJy96poj4hTEwXRTM3jd2kDsbFz3eiEZxj3EpDEZT40jUlkBOOiiX0YACsjspUfD+s7CC24+nkU2IZaD1+cHviuQfkXMCCmq1nj9Bu//B01xkbcNoW5boDDUsnenYJnkrAs5E64/8MzT+bjnLdwzYB+6O92do7qTxFaCrbZpNowugHGVhl37xpi1/x6/xKehl5xjxZ3s0vogmSUmExfDSpebA2W6Hzdjqh52wR0tXbsPEfeFR/bR7OaR5/IlbpN2L4/zFH+3sqY03P6AQIDAQAB",
    "manifest_version": 3,
    "name": "Social Bulk Downloader",
    "options_ui": {
@@ -85,7 +84,6 @@
       "page": "options.html"
    },
    "permissions": [ "cookies", "downloads", "webRequest", "declarativeNetRequest", "activeTab", "storage", "alarms", "notifications" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.7.1",
    "web_accessible_resources": [ {
       "matches": [ "https://www.tiktok.com/*", "https://www.douyin.com/*", "https://www.xiaohongshu.com/*" ],
